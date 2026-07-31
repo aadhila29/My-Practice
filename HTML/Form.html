@@ -24,26 +24,74 @@
 
 <h1><center><u>Student Application Form</u></center></h1>
 
-<form method="get" action="" align="center">
 
-           <p> Name:<br>
-           <input type=""text" name="Name" size="40"></p>
+  <fieldset>
+    <legend><h2>Login Information</h2></legend>
+
+           <p><label>Username</label><br>
+           <input type="text" name="Name" size="40"></p>
+
            <p>
-            Email:<br>
-              <input type="email" name="Email"size=40>
+            <label>Email:</label><br>
+            <input type="email" name="Email"size=40>
             </p>
+  </fieldset>
+            
+            
+            <fieldset>
+              <legend><h2>Personal Information</h2></legend>
 
               <p>
-                Address:<br>
+                <label>Address:</label><br>
                   <textarea name="Address" id="" cols="40" rows="5"></textarea>
               </p>
+            
 
 
               <p>
-                Gender:<br>
+                <label>Gender:</label><br>
                 <input type="radio" name="Gender" value="Male" checked="checked"> Male
                 <input type="radio" name="Gender" value="Female" checked="checked"> Female
                </p>
+
+                <p>
+                  Date of birth:
+                  <input type="Date" name="dob">
+                </fieldset>
+
+                </p>
+
+
+               <fieldset>
+                <legend><h2>Educational Information</h2></legend>
+                <p>
+                
+                Courses:
+                <br>
+                
+                <input type="checkbox" 
+                name="Web Development"><label>Web Development</label>
+              
+                <input type="checkbox"
+                 name="Network Engineering"><label>Network Engineering</label>
+
+                 <input type="checkbox"
+                 name="Network Engineering"><label>AI</label>
+
+                
+                <input type="checkbox" 
+                name="Network Engineering" id="NE"><label for="NE">CS</label><br>
+                <br>
+                Certificate:
+                <input type="file" checked
+              </p>
+
+               </fieldset>
+               <br>
+               <br>
+
+              <input type="submit" name="Submit" value="Submit">
+
                
 
                
