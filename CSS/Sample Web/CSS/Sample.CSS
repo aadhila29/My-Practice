@@ -1,0 +1,19 @@
+body
+{
+    background:url(../Images/img1.jpg) no-repeat center fixed;
+    background-size:cover;
+}
+
+h1
+{
+    color:rgb(255, 247, 247);
+    text-align:center;
+    border:border: 2px solid rgb(155,247,247);
+    width: 50%;
+    margin:0 auto;
+    margin-top:250px;
+    margin-left:550px;
+    padding:15px;
+    font: size 40px;
+    border-radius:5px;
+}
