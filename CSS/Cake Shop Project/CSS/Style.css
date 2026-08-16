@@ -27,18 +27,29 @@ select
         padding:5px;
 }
 
-input
+ input
 {
      width:80%;
         background-color:rgba(210, 163, 163, 0.507);
         color:rgb(31, 30, 29);
         padding:5px;
+} 
+
+#one
+{
+    width:80%;
+    background-color:rgba(83, 77, 169, 0.173);
+    color:rgb(26, 23, 22);
+    padding:5px;
 }
+
+.two
+{}
 
 textarea
 {
     width:80%;
-    background-color:rgba(210, 163, 163, 0.507);
+    background-color:rgba(245, 42, 177, 0.127);
     color:rgb(26, 23, 22);
     padding:5px;
 }
