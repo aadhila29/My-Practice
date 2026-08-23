@@ -1,0 +1,7 @@
+div
+{
+    height:400px;
+    background-color:linear-gredient(rgb(114, 33, 33),rgb(246, 126, 146));
+    background-color:radial-gredient(orange,black);
+
+}
