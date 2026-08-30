@@ -1,0 +1,41 @@
+ table
+{
+    border:3px solid red;
+    width:85%;
+    border-spacing:0px ;
+    border-collapse:separate ;
+}
+
+
+th,td
+{
+    border:1px solid plum;
+}
+
+.color1
+{
+    background-color: rgb(201, 67, 111);
+}
+
+.color2
+{
+    background-color: rgb(220, 153, 158);
+}
+
+.day
+{
+    text-align: right;
+} 
+
+/* table
+{
+    margin:30%;
+
+}
+
+td
+{
+   border:2px solid rgba(0, 0, 255, 0.645);
+   padding: 40px; 
+   empty-cells: :hide;
+} */

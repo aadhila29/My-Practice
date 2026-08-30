@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background: white;
+}
+
+.container {
+    max-width: 840px;
+    margin: auto;
+}
+
+
+
+.news-section {
+    background: #f1f3f4;
+    padding: 30px 0 38px;
+    border-bottom: 1px solid #ddd;
+}
+
+.news-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.news-text {
+    width: 65%;
+}
+
+h1 {
+    font-size: 21px;
+    margin-bottom: 20px;
+}
+
+.news-text p {
+    font-size: 11px;
+    line-height: 1.5;
+    margin-bottom: 22px;
+}
+
+
+
+
+.button {
+    display: inline-block;
+    padding: 8px 26px;
+    border: 1px solid #6d9fc5;
+    border-radius: 20px;
+
+    color: #3979a8;
+    text-decoration: none;
+
+    font-size: 11px;
+    font-weight: bold;
+}
+
+
+.news-image {
+    width: 100px;
+    height: 85px;
+
+    background: white;
+    border: 2px solid #aaa;
+    border-radius: 5px;
+
+    position: relative;
+}
+
+.news-image::before {
+    content: "";
+
+    position: absolute;
+
+    top: 13px;
+    left: 10px;
+
+    width: 65px;
+    height: 5px;
+
+    background: #4285f4;
+
+    box-shadow:
+        0 12px #34a853,
+        0 24px #101010,
+        0 32px #0c0c0c,
+        0 40px #0b0b0b;
+}
+
+.news-image::after {
+    content: "🖉";
+
+    position: absolute;
+
+    right: -13px;
+    top: -13px;
+
+    width: 30px;
+    height: 30px;
+
+    background: #fbbc04;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 15px;
+}
+
+
+
+.section {
+    padding: 40px 0;
+
+    border-bottom: 1px solid #ddd;
+}
+
+.gray {
+    background: #f1f3f4;
+}
+
+
+
+.grid {
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr 1fr;
+
+    gap: 45px;
+}
+
+
+
+
+.intro h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.intro p {
+    font-size: 12px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.intro a:not(.button) {
+    color: #3979a8;
+}
+
+
+
+.article h3 {
+    font-size: 13px;
+    font-weight: normal;
+
+    line-height: 1.4;
+
+    margin-bottom: 12px;
+}
+
+.article p {
+    font-size: 11px;
+
+    line-height: 1.5;
+
+    margin-bottom: 22px;
+}
+
+
+@media (max-width: 700px) {
+
+    .container {
+        width: 90%;
+    }
+
+    .news-content {
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 30px;
+    }
+
+    .news-text {
+        width: 100%;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+}

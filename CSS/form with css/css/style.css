@@ -1,0 +1,17 @@
+fieldset
+{
+    border: 3px solid rgba(203, 24, 24, 0.827);
+    margin-bottom: 30px;
+    border-radius:2%;
+    padding-left:40px;
+}
+
+legend
+{
+    background-color: aqua;
+    padding:5px;
+    border-radius:10px;
+    margin-left: 40%;
+    font-size 30%; ;
+}
+
