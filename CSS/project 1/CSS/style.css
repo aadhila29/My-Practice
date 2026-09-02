@@ -104,3 +104,15 @@ body
     border-radius: 10%;
     float:left;
 }
+
+.three
+{
+    width: 32px;
+    height: 600px;
+    background-color: rgb(210, 102, 102);
+    margin-top: 40%;
+    border-radius: 30%;
+    float:right;
+}
+
+

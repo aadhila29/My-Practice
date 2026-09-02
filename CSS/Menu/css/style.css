@@ -1,0 +1,11 @@
+
+ul
+{
+    list-style:circle;
+    float:right;
+    background-color:rgba(230, 132, 185, 0.752);
+    padding:20px;
+    height: 70px;
+    
+
+}
