@@ -1,0 +1,12 @@
+.red
+{
+    height:400px;
+    background-color:red;
+}
+
+.blue
+{
+    height:fit-content;
+    background-color:blue;
+    
+}
