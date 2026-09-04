@@ -83,3 +83,23 @@ input
   color:bisque;
   animation:alternate-reverse;
 }
+.cambridge-title {
+    position: absolute;
+    top: 35px;
+    left: 70px;
+
+    margin: 0;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 58px;
+    font-style: italic;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    color: white;
+
+    text-shadow:
+        2px 2px 4px rgb(69, 17, 17),
+        0 0 8px rgba(0, 0, 0, 0.5);
+}
