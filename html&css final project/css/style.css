@@ -26,18 +26,24 @@
 
 h1
 {
-    color:rgb(12, 12, 12);
-    font-size: 60px;
-    margin-right:30%;
+    color:navy;
+    font-size: 55px;
+    margin-right:30px;
 
 }
 
+body
+{
+    background:url(../images/education-case-cambridge-00_0.jpg) no-repeat center fixed;
+    background-size:cover;
+}
 h2
 {
-    text-align:center;
-    color:rgb(18, 17, 17);
+    margin-left: 3px;
+    color: navy;
     animation: 10s;
     box-sizing: content-box;
+    font-size: 18px;
 }
 /*
 div
@@ -96,4 +102,33 @@ input
     text-shadow:
         2px 2px 4px rgb(69, 17, 17),
         0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+h3
+{
+    margin-left: 3px;
+    color: navy;
+    animation: 10s;
+    box-sizing: content-box;
+    font-size: 24px;
+}
+
+button
+{
+    margin-bottom:15px;
+    border-radius:15px;
+    width:15%;
+    padding:10px;
+    font: size 20px;
+    background-color:rgb(120, 164, 228);
+
+    color: #110b6ad8;
+
+}
+
+button:hover
+{
+    box-shadow: -1px 26px 75px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: -1px 26px 75px 0px rgba(26, 23, 208, 0.532);
+-moz-box-shadow: -1px 26px 75px 0px rgba(79, 92, 204, 0.75);
 }
