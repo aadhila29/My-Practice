@@ -1,0 +1,23 @@
+body
+{
+    background-image: url(../images/valerialu-cherry-blossoms-6153384.jpg);
+    background-size:cover;
+}
+
+
+
+.hover1 li:hover
+
+{
+    background-color: rgb(130, 41, 41);
+}
+
+.one
+{
+    height:100px;
+    background-color:brown;
+    width:40%;
+    margin:0 auto;
+    border-radius: 15px;
+    
+}
