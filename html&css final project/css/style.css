@@ -5,9 +5,36 @@
     
 }
 
+.menu {
+    background-color: #d9e2f3;
+    padding: 15px 25px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.menu a:hover {
+    color: blue;
+}
+
+
 body {
     font-family: Arial, sans-serif;
-    background: rgb(3, 9, 93);
+    background: rgba(3, 9, 93, 0.275);
     color: rgb(243, 233, 182);
     line-height: 1.6;
 }
@@ -27,7 +54,7 @@ header {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #ddd;
-    background: rgb(3, 9, 93);
+    background: rgb(109, 114, 184);
 }
 
 .logo h2 {
@@ -35,17 +62,17 @@ header {
     font-weight: normal;
 }
 
-nav {
+ul {
     display: flex;
     gap: 30px;
 }
 
-nav a {
+ul a {
     font-size: 14px;
     color: rgb(243, 233, 182);
 }
 
-nav a:hover {
+ul a:hover {
     text-decoration:none;
 }
 
