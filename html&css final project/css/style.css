@@ -24,18 +24,18 @@
 .menu a {
     text-decoration: none;
     color: black;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .menu a:hover {
-    color: blue;
+    color: rgb(214, 96, 96);
 }
 
 
 body {
     font-family: Arial, sans-serif;
     background: rgba(3, 9, 93, 0.275);
-    color: rgb(243, 233, 182);
+    color: rgb(29, 10, 87);
     line-height: 1.6;
 }
 
@@ -53,8 +53,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #ddd;
-    background: rgb(109, 114, 184);
+    border-bottom: 1px solid #eefad6;
+    background: rgba(193, 195, 236, 0.56);
 }
 
 .logo h2 {
@@ -69,7 +69,7 @@ ul {
 
 ul a {
     font-size: 14px;
-    color: rgb(243, 233, 182);
+    color: rgb(218, 108, 18);
 }
 
 ul a:hover {
