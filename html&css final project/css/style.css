@@ -458,182 +458,409 @@ footer p {
 }
 
 /* =========================
-   General Styles
-========================= */
-
-body {
-    background-color: #f5f7fa;
-    font-family: Arial, sans-serif;
-}
-
-
-/* =========================
-   Contact Section
+   CONTACT PAGE
 ========================= */
 
 .contact-section {
     padding: 80px 0;
+    background-color: #f5f5f5;
+    min-height: 80vh;
 }
 
-
-/* =========================
-   Heading
-========================= */
-
-.contact-title {
+.contact-section h1 {
     font-size: 42px;
     font-weight: 700;
-    color: #222;
+    margin-bottom: 15px;
 }
 
-.contact-subtitle {
-    color: #777;
-    max-width: 600px;
-    margin: 10px auto 0;
-    line-height: 1.6;
-}
-
-
-/* =========================
-   Contact Information
-========================= */
-
-.contact-info {
-    background-color: #0d6efd;
-    color: white;
-    border-radius: 15px;
-    padding: 40px;
-    height: 100%;
-}
-
-.contact-info h3 {
+.contact-section h2 {
     font-size: 28px;
+    font-weight: 600;
     margin-bottom: 20px;
 }
 
-.contact-info p {
+
+/* Contact Information */
+
+.contact-info {
+    background-color: #ffffff;
+    padding: 35px;
+    height: 100%;
+    border-radius: 8px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+}
+
+.contact-info > p {
+    line-height: 1.7;
+    color: #555;
+}
+
+.info-box {
+    margin-top: 25px;
+}
+
+.info-box h5 {
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.info-box p {
+    color: #555;
     line-height: 1.6;
 }
 
 
-/* =========================
-   Information Items
-========================= */
+/* Contact Form */
 
-.info-item {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 25px;
+.contact-form {
+    background-color: #ffffff;
+    padding: 35px;
+    border-radius: 8px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
 }
 
-.info-item i {
-    font-size: 23px;
-    margin-right: 15px;
-    min-width: 25px;
-}
-
-.info-item h6 {
-    margin-bottom: 5px;
+.contact-form label {
     font-weight: 600;
+    margin-bottom: 8px;
 }
 
-.info-item p {
+.contact-form .form-control {
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+.contact-form .form-control:focus {
+    border-color: #1b365d;
+    box-shadow: none;
+}
+
+.contact-form .btn {
+    padding: 12px 30px;
+    border-radius: 5px;
+}
+
+
+/* Footer */
+
+.footer {
+    background-color: #1b365d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* =========================================
+   ABOUT US PAGE
+========================================= */
+
+
+/* ABOUT HERO */
+
+.about-hero {
+    background: #1b365d;
+    color: white;
+    padding: 100px 0;
+}
+
+.about-label,
+.section-label {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.about-label {
+    margin-bottom: 20px;
+}
+
+.about-hero h1 {
+    font-size: 52px;
+    line-height: 1.15;
+    font-weight: 700;
+    max-width: 750px;
+}
+
+.about-intro {
+    font-size: 19px;
+    line-height: 1.8;
+    max-width: 700px;
+    margin-top: 25px;
+}
+
+
+/* INTRODUCTION */
+
+.about-introduction {
+    padding: 100px 0;
+    background: white;
+}
+
+.about-main-image {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.section-label {
+    color: #1b365d;
+}
+
+.about-introduction h2,
+.heritage-section h2,
+.learning-section h2,
+.research-section h2,
+.community-section h2,
+.why-section h2 {
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 700;
+    margin: 15px 0 25px;
+}
+
+.about-introduction p,
+.heritage-section p,
+.research-section p,
+.community-section p {
+    color: #555;
+    line-height: 1.8;
+}
+
+
+/* HERITAGE */
+
+.heritage-section {
+    padding: 100px 0;
+    background: #f4f4f4;
+}
+
+.heritage-points {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.heritage-points span {
+    border: 1px solid #1b365d;
+    padding: 10px 18px;
+    font-weight: 600;
+    color: #1b365d;
+}
+
+.heritage-box {
+    background: #1b365d;
+    color: white;
+    padding: 55px 40px;
+    min-height: 260px;
+}
+
+.heritage-box h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.heritage-box p {
+    color: white;
+}
+
+
+/* LEARNING */
+
+.learning-section {
+    padding: 100px 0;
+    background: white;
+}
+
+.section-heading {
+    max-width: 800px;
+    margin: auto;
+}
+
+.section-heading p {
+    color: #666;
+    line-height: 1.8;
+}
+
+.content-card {
+    padding: 35px;
+    border-top: 4px solid #1b365d;
+    background: #f7f7f7;
+    height: 100%;
+    transition: 0.3s;
+}
+
+.content-card:hover {
+    transform: translateY(-8px);
+}
+
+.card-number {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1b365d;
+    margin-bottom: 20px;
+}
+
+.content-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.content-card p {
+    color: #666;
+    line-height: 1.7;
+}
+
+
+/* RESEARCH */
+
+.research-section {
+    padding: 100px 0;
+    background: #f4f4f4;
+}
+
+.research-highlight {
+    background: #1b365d;
+    color: white;
+    padding: 50px 40px;
+}
+
+.research-highlight h3 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.research-highlight p {
+    color: white;
+    font-size: 18px;
+}
+
+
+/* COMMUNITY */
+
+.community-section {
+    padding: 100px 0;
+    background: white;
+}
+
+.community-text {
+    max-width: 800px;
+    margin: auto;
+    font-size: 17px;
+}
+
+
+/* VISION */
+
+.vision-section {
+    padding: 100px 0;
+    background: #1b365d;
+    color: white;
+}
+
+.vision-content {
+    max-width: 900px;
+    margin: auto;
+}
+
+.vision-section .section-label {
+    color: white;
+}
+
+.vision-section h2 {
+    font-size: 45px;
+    line-height: 1.2;
+    margin: 20px 0;
+}
+
+.vision-section p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+
+/* WHY CAMBRIDGE */
+
+.why-section {
+    padding: 100px 0;
+    background: #f7f7f7;
+}
+
+.why-card {
+    background: white;
+    padding: 30px;
+    height: 100%;
+    border-bottom: 3px solid #1b365d;
+}
+
+.why-card h3 {
+    font-size: 22px;
+    color: #1b365d;
+    margin-bottom: 15px;
+}
+
+.why-card p {
+    color: #666;
+    line-height: 1.7;
+}
+
+
+/* FOOTER */
+
+.footer {
+    background: #111827;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+.footer p {
     margin: 0;
 }
 
 
-/* =========================
-   Social Icons
-========================= */
-
-.social-icons {
-    margin-top: 30px;
-}
-
-.social-icons a {
-    display: inline-block;
-    color: white;
-    font-size: 21px;
-    margin-right: 18px;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-.social-icons a:hover {
-    transform: translateY(-3px);
-    opacity: 0.8;
-}
-
-
-/* =========================
-   Contact Form Card
-========================= */
-
-.contact-card {
-    background-color: white;
-    border-radius: 15px;
-    padding: 40px;
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
-    height: 100%;
-}
-
-.contact-card h3 {
-    font-size: 28px;
-    margin-bottom: 25px;
-    color: #222;
-}
-
-
-/* =========================
-   Form Controls
-========================= */
-
-.form-label {
-    font-weight: 600;
-    color: #333;
-}
-
-.form-control {
-    padding: 12px 15px;
-    border-radius: 8px;
-    border: 1px solid #ddd;
-}
-
-.form-control:focus {
-    border-color: #0d6efd;
-    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15);
-}
-
-
-/* =========================
-   Send Button
-========================= */
-
-.btn-send {
-    padding: 12px 30px;
-    border-radius: 8px;
-    font-weight: 600;
-    margin-top: 10px;
-}
-
-
-/* =========================
-   Responsive Design
-========================= */
+/* RESPONSIVE */
 
 @media (max-width: 768px) {
 
-    .contact-section {
-        padding: 50px 15px;
+    .about-hero {
+        padding: 70px 20px;
     }
 
-    .contact-title {
+    .about-hero h1 {
+        font-size: 36px;
+    }
+
+    .about-introduction,
+    .heritage-section,
+    .learning-section,
+    .research-section,
+    .community-section,
+    .vision-section,
+    .why-section {
+        padding: 70px 20px;
+    }
+
+    .about-introduction h2,
+    .heritage-section h2,
+    .learning-section h2,
+    .research-section h2,
+    .community-section h2,
+    .why-section h2 {
+        font-size: 32px;
+    }
+
+    .vision-section h2 {
         font-size: 34px;
     }
 
-    .contact-info,
-    .contact-card {
-        padding: 30px;
+    .about-main-image {
+        height: 300px;
     }
 
 }
