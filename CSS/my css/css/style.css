@@ -427,3 +427,71 @@ color: white;
 
 
 }
+
+/* About Us Section */
+.about {
+padding: 80px 10%;
+background: #f8f9fc;
+}
+
+.about-content {
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 50px;
+max-width: 1200px;
+margin: auto;
+}
+
+.about-text {
+flex: 1;
+}
+
+.about-text h2 {
+font-size: 38px;
+margin-bottom: 20px;
+color: #222;
+}
+
+.about-text p {
+color: #666;
+line-height: 1.8;
+margin-bottom: 15px;
+}
+
+.about-box {
+flex: 1;
+padding: 50px;
+background: linear-gradient(135deg, #6c63ff, #4f46e5);
+color: white;
+border-radius: 20px;
+text-align: center;
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.about-box h3 {
+font-size: 28px;
+margin-bottom: 15px;
+}
+
+.about-box p {
+line-height: 1.7;
+}
+
+/* Responsive About Section */
+@media (max-width: 768px) {
+.about-content {
+flex-direction: column;
+text-align: center;
+}
+
+.about-text h2 {
+    font-size: 32px;
+}
+
+.about-box {
+    width: 100%;
+}
+
+
+}
