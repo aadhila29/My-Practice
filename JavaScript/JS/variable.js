@@ -143,11 +143,11 @@
 
 // CONCATENATION OPERATORS
 // 
-let lang="mastech";
-console.log("hello " + lang + "!");
+// let lang="mastech";
+// console.log("hello " + lang + "!");
 
-console.log('aadhila'+123);
-console.log(2026-2000);
+// console.log('aadhila'+123);
+// console.log(2026-2000);
 
 //reletional operators
 // >
@@ -200,10 +200,25 @@ console.log(2026-2000);
 // console.log(!null);//true
 
 
-console.log(10 || "ok");// 10 true
+// console.log(10 || "ok");// 10 true
 
 
-console.log(undefined && "aadhila");//undefined false
+// console.log(undefined && "aadhila");//undefined false
+
+
+// ARRAYS
+
+
+// let students=["fathima","aadhila","azla"]
+// console.log(students[1]);//aadhila
+
+// let student=["fathima","aadhila","azla"]
+
+// student.push("Aadhila")
+// // console.log(`We Have ${student.length} students.`);//4
+// console.log( students);
+
+
 
 
 
