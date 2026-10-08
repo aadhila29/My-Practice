@@ -7,6 +7,69 @@
     <script src="../JavaScript/JS/Function.js"></script>
 </head>
 <body>
+    <!-- <h1 id="Hello world">Hello World</h1>
+    <button onclick="change('Bye World')">Change</button>
+</script> -->
+
+
+<!-- <script>
+    let h1=document.getElementById("Hello world");
+    console.log(h1.textContent);
+
+    function change(newText)
+    {
+     h1.textContent=newText;
+    }
+</script> -->
+
+<!-- <input id="num1">
+<input id="num2" >
+<button onclick="answer()">Add</button>
+<p id="result">Result</p>
+
+<script>
+    let box1=document.getElementsByClassName("num1");
+    let box2=document.getElementsByClassName("num2");
+
+    let total=document.getElementById("result");
+
     
+    
+    function answer()
+    {
+        let box1value=Number(box1.value);
+    let box2value=Number(box2.value);
+
+    let tol=box1value*box2value;
+        result.textContent=tol
+    } -->
+<!-- </script> -->
+
+<div id="box"></div>
+<button onclick="change()">change color</button>
+
+<style>
+    div
+    {
+      background-color:rgb(192, 45, 84);
+      width:100px;
+      height:100px;
+      transition:2s;
+    }
+
+   .widthmax{
+        width:1000px;
+    }
+
+</style>
+
+<script>
+    let box=document.getElementById("box")
+
+    function change ()
+    {
+        box.setAttribute("class","widthmax")
+    }
+</script>
 </body>
 </html>

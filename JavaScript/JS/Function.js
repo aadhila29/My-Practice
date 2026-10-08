@@ -22,4 +22,12 @@ visitedlist.forEach(function(value , position)
 );
 
 
-*/+
+*/
+
+// FOR LOOP
+
+//for(variable;condition;increment/decrement)
+    
+// for (my = 1; my <= 10; my++) {
+//     console.log(my + " hello");
+// }
