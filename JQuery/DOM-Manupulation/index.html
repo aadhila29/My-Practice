@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <img src="logo.png" alt="logo">
+    <div id="parent">
+        <p>one</p>
+    </div>
+
+    <div id="to remove">Bye World</div>
+    <script>
+        //Atribute
+        //attr()
+        $('#image').attr('alt','New Logo');
+
+        //append()
+        $('#parent').append('<p>two</p>')
+         $('#parent').append('<p>three</p>')
+
+         //prepend
+         $('#parent').prepend('<p>text 0</p>');
+
+         //remove
+         $('#to remove').remove();
+
+         
+    </script>
+</body>
+</html>

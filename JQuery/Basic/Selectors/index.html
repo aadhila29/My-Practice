@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="one">Welcome</div>
+    <div id="two">Hello</div>
+    <div id="two">bye</div>
+
+    <p>paragraph 1</p>
+     <p>paragraph 1</p>
+
+     <form action="">
+        <input type="text" placeholder="Enter Text">
+        <input type="password" placeholder="Enter password"></input>
+     </form>
+
+     <div class="continer">
+        <p>paragraph 1</p>
+     <p>paragraph 1</p>
+     </div>
+
+     <div class="parent">
+        <p>Direct Child</p>
+        <div>
+            <p>Not a direct child</p>
+        </div>
+     </div>
+
+
+    <script>
+        //ID Selector
+        $('#one').text("welcome to mars tech");
+
+        //Class Selector
+        $('.two').css('background-color','pink');
+
+        //Element selector
+        $('p').hide();
+
+        // Atributes selector
+        $('[placeholder]').css('border','2px solid');
+
+
+        //Desend SElector
+        $('.container p').css('color','green');
+
+        //child selector
+        $('parent >p').css('font-weight','bold');
+
+    </script>
+    
+</body>
+</html>
