@@ -38,3 +38,12 @@ fs.readFileSync("Student.text","utf8",(err,data)=>
 });
 
 console.log("Next Operation");*/
+
+
+
+const fs=require("fs");
+const path=require("path");
+const filepath=path.json(__dirname,"data","student.txt");
+const data=fs.readFileSync(filepath,"utf-8");
+
+console.log(data);
