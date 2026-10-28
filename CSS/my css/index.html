@@ -4,108 +4,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aadhila | Personal Portfolio</title>
-    <link rel="stylesheet" href="../my css/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <title>Urban Bites | Fast Food Restaurant</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header class="navbar">
-        <a href="index.html" class="logo">A<span>.</span></a>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">URBAN<span>BITES.</span></a>
 
-        <nav>
-            <a href="index.html" class="active">Home</a>
-            <a href="about.html">About</a>
-            <a href="education.html">Education</a>
-            <a href="skills.html">Skills</a>
-            <a href="contact.html">Contact</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <a href="#menu" class="order-btn">Order Now</a>
         </nav>
-
-        <a href="contact.html" class="nav-btn">Let's Connect ↗</a>
     </header>
 
-    <main class="hero">
+    <!-- Hero Section -->
+    <section class="hero" id="home">
         <div class="hero-content">
+            <p class="tagline">WELCOME TO URBAN BITES</p>
 
-            <p class="eyebrow">
-                <span class="status-dot"></span>
-                WELCOME TO MY LITTLE CORNER
-            </p>
-
-            <h1>
-                Turning ideas into
-                <span class="highlight">digital experiences.</span>
+            <h1>BIG FLAVOR.<br>
+                <span>ZERO BORING.</span>
             </h1>
 
-            <p class="description">
-                Hey, I'm Aadhila — an aspiring IT student with a curious
-                mind, a creative soul, and a passion for technology.
-                I'm here to learn, create, and build something meaningful.
+            <p class="hero-description">
+                Fresh ingredients, juicy burgers, crispy fries
+                and unforgettable flavors. Your cravings,
+                our mission.
             </p>
 
-            <div class="hero-buttons">
-                <a href="about.html" class="primary-btn">
-                    Discover My World <span>↗</span>
-                </a>
+            <a href="#menu" class="main-btn">Explore Menu →</a>
 
-                <a href="education.html" class="secondary-btn">
-                    Explore My Journey
-                </a>
-            </div>
-
-            <div class="hero-footer">
+            <div class="hero-info">
                 <div>
-                    <strong>01</strong>
-                    <span>Curiosity</span>
+                    <h3>100%</h3>
+                    <p>Fresh Ingredients</p>
                 </div>
-
                 <div>
-                    <strong>02</strong>
-                    <span>Creativity</span>
+                    <h3>20+</h3>
+                    <p>Delicious Dishes</p>
                 </div>
-
                 <div>
-                    <strong>03</strong>
-                    <span>Consistency</span>
+                    <h3>5★</h3>
+                    <p>Food Experience</p>
                 </div>
             </div>
-
         </div>
 
-        <div class="hero-visual">
-            <div class="decor decor-one"></div>
-            <div class="decor decor-two"></div>
-
-            <div class="image-frame">
-                <img src="images/profile.jpg" alt="Aadhila's portrait">
-                <div class="image-caption">
-                    <span>THE PERSON BEHIND THE DREAMS</span>
-                    <strong>Learning. Growing. Becoming.</strong>
-                </div>
-            </div>
-
-            <div class="floating-card">
-                <span class="sparkle">✳</span>
-                <div>
-                    <strong>Always evolving</strong>
-                    <p>One step at a time.</p>
-                </div>
-            </div>
-
-            <span class="side-text">CREATIVE MIND · FUTURE IN TECH</span>
+        <div class="hero-image">
+            <img
+                src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1000&q=85"
+                alt="Delicious gourmet cheeseburger">
         </div>
-    </main>
-
-    <section class="bottom-section">
-        <p>MY JOURNEY STARTS HERE</p>
-        <a href="about.html">A little more about me <span>↓</span></a>
     </section>
 
+    <!-- Menu Section -->
+    <section class="menu-section" id="menu">
+        <div class="section-heading">
+            <p class="tagline">TASTE THE DIFFERENCE</p>
+            <h2>Our Popular <span>Menu</span></h2>
+            <p>Good food. Great mood. Every single time.</p>
+        </div>
+
+        <div class="menu-container">
+
+            <div class="menu-card">
+                <img
+                    src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80"
+                    alt="Classic cheeseburger">
+                <div class="menu-details">
+                    <h3>Classic Burger</h3>
+                    <p>Juicy beef, fresh lettuce and melted cheese.</p>
+                    <div class="menu-bottom">
+                        <span class="price">Rs. 1,200</span>
+                        <button class="add-btn" type="button"
+                            onclick="addToOrder('Classic Burger', 1200)">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img
+                    src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=600&q=80"
+                    alt="Crispy golden french fries">
+                <div class="menu-details">
+                    <h3>Crispy Fries</h3>
+                    <p>Golden, crispy fries with a delicious crunch.</p>
+                    <div class="menu-bottom">
+                        <span class="price">Rs. 550</span>
+                        <button class="add-btn" type="button"
+                            onclick="addToOrder('Crispy Fries', 550)">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img
+                    src="https://images.unsplash.com/photo-1525385133512-2f3bdd039054?auto=format&fit=crop&w=600&q=80"
+                    alt="Refreshing cold drink">
+                <div class="menu-details">
+                    <h3>Chilled Drink</h3>
+                    <p>A refreshing drink to complete your meal.</p>
+                    <div class="menu-bottom">
+                        <span class="price">Rs. 350</span>
+                        <button class="add-btn" type="button"
+                            onclick="addToOrder('Chilled Drink', 350)">+</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="order-summary">
+            <h3>Your Order</h3>
+            <p id="order-count">Items selected: 0</p>
+            <p id="order-total">Total: Rs. 0</p>
+            <button class="main-btn" type="button" onclick="placeOrder()">
+                Place Order
+            </button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="about-image">
+            <img
+                src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=900&q=85"
+                alt="Freshly prepared burger">
+        </div>
+
+        <div class="about-content">
+            <p class="tagline">MORE THAN JUST FAST FOOD</p>
+            <h2>Made Fresh.<br><span>Served With Love.</span></h2>
+            <p>
+                At Urban Bites, we believe great food brings
+                people together. We combine fresh ingredients,
+                bold flavors and a passion for quality to make
+                every bite memorable.
+            </p>
+            <a href="#contact" class="main-btn">Get In Touch →</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <p class="tagline">WE WOULD LOVE TO HEAR FROM YOU</p>
+        <h2>Let's Talk <span>Food.</span></h2>
+        <p>Have a question or craving something delicious?</p>
+        <a href="mailto:hello@urbanbites.example" class="main-btn">
+            Contact Us
+        </a>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>© 2026 Aadhila. Made with intention.</p>
-        <p>Dream big. Start small. Keep going.</p>
+        <a href="#home" class="logo">URBAN<span>BITES.</span></a>
+        <p>Big flavor. Good vibes. © 2026 Urban Bites.</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
