@@ -44,6 +44,8 @@ const express = require('express');
 
 const app = express();
 
+app.use(express.json());
+
 app.get('/', (req, res) => {
     res.send('Hello! Server is working!');
 });
@@ -109,8 +111,31 @@ app.put("/student-demo/:id",(req,res)=>
      });
 });
 
+
+//DELETE
+app.delete("/students-demo/:id", (req, res) => {
+    const id = Number(req.params.id);
+    const index = students.findIndex((s) => s.id === id);
+
+    if (index === -1) {
+        return res.status(404).json({
+            message: "Student not found"
+        });
+    }
+
+    students.splice(index, 1);
+    res.status(200).json({
+        message: "Student deleted",
+        student: students[index]
+    });
+});
+
+
+
 //PATCH
 
 app.listen(3000, () => {
     console.log('Server running on port 3000');
 });
+
+
