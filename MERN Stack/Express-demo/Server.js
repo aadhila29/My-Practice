@@ -1,141 +1,32 @@
-/*import express from "express";
-const app=express();
-app.get("/",(req,res)=>
-{
-  res.send("Heloooo hii");
-});
-app get("/about",(req,res)=>
-{
-    res.send("This is the about page")
-});
+import express from "express";
+import morgan from "morgan";
 
-app.get("/contact",(req,res)=>
-{
-    res.send("aadhila.tech@gmail.com")
-});
-
-app.get("/students/:id,courses/course",(req,res)=>
-{
-    res.json({
-        studentId:req.params.id,
-        courseName:params.course
-});
-
-app.get("/search",(req,res)=>
-{
-    res.send(req.query.keyword);
-});
-
-})
-
-app.get("/api/student",(req,res)=>
-{
-    res.json({
-        message:"students retrived Successfully",
-        student:[
-            {id:102,name:"raja"},
-        {id:102,name:"raja"}]
-    });
-})
-*/
-
-
-const express = require('express');
+import studentRoutes from "./Routes/student Routes.js";
 
 const app = express();
 
+// Middleware
 app.use(express.json());
+app.use(morgan("dev"));
 
-app.get('/', (req, res) => {
-    res.send('Hello! Server is working!');
+// Custom middleware
+const requestlogger = (req, res, next) => {
+    console.log("Request Method:", req.method);
+    console.log("Request URL:", req.url);
+    console.log("Request Time:", new Date().toLocaleString());
+    next();
+};
+
+app.use(requestlogger);
+
+// Student API routes
+app.use("/api/students", studentRoutes);
+
+// Home route
+app.get("/", (req, res) => {
+    res.send("Welcome to Student API");
 });
-
-let students=[
-    {id:1,name:"raja",age:20,course:"SE"},
-    {id:2,name:"kumar",age:22,course:"IT"},
-    {id:2,name:"kumar",age:22,course:"IT"}
-];
-
-//GET
-app.get("/students-demo",(req,res)=>
-{
-    res.status(200).json(students);
-});
-
-app.get("/students-demo/:id",(req,res)=>
-{
-    const id=Number(req.params.id);
-
-    const student=students.find((s)=> s.id ===id);
-
-    if(!student)
-    {return res.status(404).json({
-    message:"student not found"
-    
-});
-}
-
-res.status(200).json(student);
-});
-
-app.post("/students-demo",(req,res)=>
-{
-    const newstudent=req.body
-
-    students.push(newstudent);
-
-    escape.status(201).json(
-        {message:"student added",
-            student:newstudent
-        }
-    );
-});
-
-app.put("/student-demo/:id",(req,res)=>
-{
-    const id=Number(req.paramas.id);
-    const index=students.findIndex((s)=> s.id===id);
-
-    if(index===-1){
-        return res.status(404).json(
-            {
-                message:"student not found"
-            }
-        );
-    }
-     students[index]={id,...req.body};
-     
-     res.status(200).json({
-        message:"student replaced",
-        student:students[index]
-     });
-});
-
-
-//DELETE
-app.delete("/students-demo/:id", (req, res) => {
-    const id = Number(req.params.id);
-    const index = students.findIndex((s) => s.id === id);
-
-    if (index === -1) {
-        return res.status(404).json({
-            message: "Student not found"
-        });
-    }
-
-    students.splice(index, 1);
-    res.status(200).json({
-        message: "Student deleted",
-        student: students[index]
-    });
-});
-
-
-
-//PATCH
 
 app.listen(3000, () => {
-    console.log('Server running on port 3000');
+    console.log("Server running on port 3000");
 });
-
-
