@@ -27,6 +27,15 @@ app.get("/", (req, res) => {
     res.send("Welcome to Student API");
 });
 
+//EJS route
+app.get("/welcome", (req,res,next)=>{
+    res.render("welcome", { name: "John", course: "Node.js" });
+});
+
+app.get("/student-info", (req, res, next) => {
+    res.render("student-info", { name: "John", course: "Node.js", email: "john@example.com" });
+});
+
 app.listen(3000, () => {
     console.log("Server running on port 3000");
 });
