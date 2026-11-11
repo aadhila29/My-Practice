@@ -1,13 +1,18 @@
+
 import express from "express";
 import morgan from "morgan";
-
 import studentRoutes from "./Routes/student Routes.js";
 
 const app = express();
 
+// EJS Configuration
+app.set("view engine", "ejs");
+app.set("views", "./views");
+
 // Middleware
 app.use(express.json());
 app.use(morgan("dev"));
+app.use(express.static("public"));
 
 // Custom middleware
 const requestlogger = (req, res, next) => {
@@ -27,15 +32,44 @@ app.get("/", (req, res) => {
     res.send("Welcome to Student API");
 });
 
-//EJS route
-app.get("/welcome", (req,res,next)=>{
-    res.render("welcome", { name: "John", course: "Node.js" });
+// Welcome EJS route
+app.get("/welcome", (req, res) => {
+    res.render("welcome", {
+        name: "John",
+        course: "Node.js"
+    });
 });
 
-app.get("/student-info", (req, res, next) => {
-    res.render("student-info", { name: "John", course: "Node.js", email: "john@example.com" });
+// Student info EJS route
+app.get("/student-info", (req, res) => {
+    res.render("student-info", {
+        name: "John",
+        course: "Node.js",
+        email: "john@example.com"
+    });
 });
 
+//About page EJS
+app.get("/about", (req, res) => {
+    res.render("about", {
+        title: "About us"
+    });
+});
+
+// Student page EJS
+app.get("/student-page", (req, res) => {
+
+    const students = [
+        { id: 1, name: "John", age: 20, course: "SE" },
+        { id: 2, name: "Halo", age: 21, course: "CS" },
+        { id: 3, name: "Alice", age: 17, course: "IT" }
+    ];
+
+    res.render("student", { students });
+
+});
+
+// Start server
 app.listen(3000, () => {
     console.log("Server running on port 3000");
 });
