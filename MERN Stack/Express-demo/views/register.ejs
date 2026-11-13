@@ -1,0 +1,19 @@
+<%- include("partials/header", { title: "Register" }) %>
+<h1>Student Registration</h1>
+
+<form action="/register" method="post">
+    <label>Student name:</label>
+    <input type="text" name="name" required>
+    <br><br>
+    <label>Student age:</label>
+    <input type="number" name="age" min="1" required>
+    
+
+    <lable>Course:</lable>
+    <select name="course" required>
+        <option value="it">IT</option>
+        <option value="cs">CS</option>
+        <option value="ee">EE</option>
+        <option value="me">Mechanical Engineering </option>
+    </select>
+</form>
